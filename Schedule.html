@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+ 
+<style>
+
+
+/*------------manu style -----------*/
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  .nav__img {
+    width: 32px;
+    border-radius: 50%;
+  }
+  
+  .nav__logo {
+    color: var(--title-color);
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .nav__menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: var(--container-color);
+      box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+      width: 100%;
+      height: 4rem;
+      padding: 0 1rem;
+      display: grid;
+      align-content: center;
+      border-radius: 1.25rem 1.25rem 0 0;
+      transition: .4s;
+      background: white;
+      margin-left: -30px;
+    }
+  }
+  
+  .nav__list, 
+  .nav__link {
+    display: flex;
+  }
+  
+  .nav__link {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+    color: var(--title-color);
+    font-weight: 600;
+    margin-right: 25px;
+
+  }
+  
+  .nav__list {
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .nav li a {
+    font-size: 15px;
+    text-decoration: none;}
+  
+    /* display: none;*/ /* Minimalist design, hidden labels */
+  
+  
+  .nav__icon {
+    font-size: 1.5rem;
+  }
+
+
+    #one{
+        padding: 3px; background: white;
+        width: 100%;
+        color:black;
+        text-align: center;
+        border-bottom: 2px black solid;
+        cursor: pointer;
+        font-family: arial black;
+    }
+    #m1{
+       
+        width: 100%;
+        padding: 20px;
+        box-shadow: 10px 10px 10px gray;
+        margin-top: -30px;
+
+    }
+    #m1{float:left;}
+    #m1 ol li a{color:black;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    #m1 ol li{margin-left: -50px; list-style: none; padding: 20px; text-align: center;
+    border-bottom: 2px }
+    
+
+    #two{
+        padding: 3px; background: white;
+        width: 100%;
+        color:black;
+        text-align: center;
+        border-bottom: 2px black solid;
+        cursor: pointer;
+        font-family: arial black;
+    }
+    #m2{
+       
+        width: 100%;
+        padding: 20px;
+        box-shadow: 10px 10px 10px gray;
+        margin-top: -30px;
+
+    }
+    #m2{float:left;}
+    #m2 ol li a{color:black;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    #m2 ol li{margin-left: -50px; list-style: none; padding: 20px; text-align: center;
+    border-bottom: 2px }
+
+
+    #three{
+        padding: 3px; background: white;
+        width: 100%;
+        color:black;
+        text-align: center;
+        border-bottom: 2px black solid;
+        cursor: pointer;
+        font-family: arial black;
+    }
+    #m3{
+       
+        width: 100%;
+        padding: 20px;
+        box-shadow: 10px 10px 10px gray;
+        margin-top: -30px;
+
+    }
+    #m3{float:left;}
+    #m3 ol li a{color:black;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    #m3 ol li{margin-left: -50px; list-style: none; padding: 20px; text-align: center;
+    border-bottom: 2px }
+
+    #four{
+        padding: 3px; background: white;
+        width: 100%;
+        color:black;
+        text-align: center;
+        border-bottom: 2px black solid;
+        cursor: pointer;
+        font-family: arial black;
+    }
+    #m4{
+       
+        width: 100%;
+        padding: 20px;
+        box-shadow: 10px 10px 10px gray;
+        margin-top: -30px;
+
+    }
+    #m4{float:left;}
+    #m4 ol li a{color:black;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    #m4 ol li{margin-left: -50px; list-style: none; padding: 20px; text-align: center;
+    border-bottom: 2px }
+
+    .add{
+        width: 100%; 
+        margin-left: -40px;
+    }
+
+    .add a{
+        text-decoration: none;
+        color: black;
+
+    }
+</style>
+<body>
+    <div style="width: 100%; padding:20px;">
+        <h2>Mk chauhan</h2>
+    </div>
+
+    
+<script>
+     $(document).ready(function()
+    {
+        $("#one").click(function()
+    
+            {
+
+                $(".m1").slideToggle(500)
+
+
+            })
+
+
+
+    })
+
+
+     $(document).ready(function()
+    {
+        $("#one").click(function()
+    
+            {
+
+                $("#m1").slideToggle(500)
+
+
+            })
+
+
+
+    })
+
+    function f1()
+    {
+        document.title ="Ready"
+        document.bgColor="black"
+    }
+</script>
+<!----------------card 2------------------------------>
+
+<script>
+    $(document).ready(function()
+   {
+       $("#one").click(function()
+   
+           {
+
+               $(".m1").slideToggle(500)
+
+
+           })
+
+
+
+   })
+
+   <!----------------card 2------------------------------>
+    $(document).ready(function()
+   {
+       $("#two").click(function()
+   
+           {
+
+               $("#m2").slideToggle(500)
+
+
+           })
+
+
+
+   })
+
+
+   $(document).ready(function()
+   {
+       $("#three").click(function()
+   
+           {
+
+               $("#m3").slideToggle(500)
+
+
+           })
+
+
+
+   })
+
+   $(document).ready(function()
+   {
+       $("#four").click(function()
+   
+           {
+
+               $("#m4").slideToggle(500)
+
+
+           })
+
+
+
+   })
+
+
+
+   function f1()
+   {
+       document.title ="Ready"
+       document.bgColor="black"
+   }
+</script>
+<div id="one"><img src="images/tarazu.png" style="width: 50px;">ESTIMATED WEIGHT<img src="images/arrow.png" style="width: 25px;margin-left: 10px;"></div>
+<div id="m1">
+        <ol>
+            <li><a href="">Less than 20kg</a></li>
+            <li><a href="">20-50kg</a></li>
+            <li><a href="">50-100kg</a></li>
+            <li><a href="">100-700kg</a></li>
+            <li><a href="">more than 700kg</a></li>
+        </ol>
+</div>
+    <!-----------------------CARD 2----------------->
+
+<div id="two"><img src="images/calendar.png" style="width: 40px;margin-top: 20PX;">SELECT DATE<img src="images/arrow.png" style="width: 25px;margin-left: 10px;"></div>
+<div id="m2">
+        <ol>
+            <li><a href="">Less than 20kg</a></li>
+            
+        </ol>
+</div>
+
+<div id="three"><img src="images/time.png" style="width: 40px;margin-top: 20PX;">SELECT TIME<img src="images/arrow.png" style="width: 25px;margin-left: 10px;"></div>
+<div id="m3">
+        <ol>
+            <li><a href="">11 AM to 3 PM</a></li>
+            <li><a href="">3 PM to 8 PM</a></li>
+            
+        </ol>
+</div>
+
+<div id="four"><img src="images/current.png" style="width: 40px;margin-top: 20PX;">PICKUP ADDRESS<img src="images/arrow.png" style="width: 25px;margin-left: 10px;"></div>
+<div id="m4">
+        <ol>
+            <p style="text-align: center;">No Address added yet!</p>
+            <button class="add"><a href="">Add Another Address</a></button>
+            
+            
+        </ol>
+</div>
+
+<div><img src="images/question.png" style="width: 40px;margin-top: 20PX; margin-left: 10px;"><p style="font-size: 10PX; margin-left:60PX ; margin-top: -30px;">PLEASE FILL ALL THE REQUIRED DETAILS TO<br/> SCHEDULE PICKUP</p></div>
+
+
+<button style="width: 100%; height: 40px; font-family: arial black;">SCHEDULE PICKUP</button>
+
+
+<!------------------------------------menu bar---------------------------------------------->
+
+
+<header class="header" id="header">
+    <nav class="nav container">
+      
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link active-link">
+                        <i class='bx bx-home-alt nav__icon'></i>
+                        <span class="nav__name">Home</span>
+                    </a>
+                </li>
+                
+                <li class="nav__item">
+                    <a href="rates.html" class="nav__link">
+                        
+                        <i class='bx bx-message-square-detail nav__icon'></i>
+                        <span class="nav__name">Rates</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="Schedule.html" class="nav__link">
+                      
+                        <i class='bx bxs-truck'
+                        style="font-size: 25px"></i>
+                        <span class="nav__name">Schedule</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class='bx bxs-truck' style="font-size: 25px;"></i>
+                        <span class="nav__name">Pickups</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contactme" class="nav__link">
+                      <i class='bx bx-user nav__icon'></i>   
+                        <span class="nav__name">Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+
+        <img src="assets/img/perfil.png" alt="" class="nav__img">
+    </nav>
+</header>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickups</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+ 
+<style>
+    .main{
+        width: 100%;
+        padding: 30px;
+        display: flex;
+
+    }
+    .up{
+        width: 50%;
+
+    }
+    #comp{
+        width: 50%;
+        margin-left: 80px;
+
+    }
+    .up button{
+        color: green;
+        
+    }
+
+    #comp button{
+        color: green;
+    }
+
+.pick h1{
+    text-align: center;
+    font-size: 15px;
+
+}
+
+
+/*------------manu style -----------*/
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+  }
+  
+  .nav__img {
+    width: 32px;
+    border-radius: 50%;
+  }
+  
+  .nav__logo {
+    color: var(--title-color);
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .nav__menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: var(--container-color);
+      box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+      width: 100%;
+      height: 4rem;
+      padding: 0 1rem;
+      display: grid;
+      align-content: center;
+      border-radius: 1.25rem 1.25rem 0 0;
+      transition: .4s;
+      background: white;
+      margin-left: -50px;
+    }
+  }
+  
+  .nav__list, 
+  .nav__link {
+    display: flex;
+  }
+  
+  .nav__link {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+    color: var(--title-color);
+    font-weight: 600;
+    margin-right: 25px;
+
+  }
+  
+  .nav__list {
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .nav li a {
+    font-size: 15px;
+    text-decoration: none;}
+  
+    /* display: none;*/ /* Minimalist design, hidden labels */
+  
+  
+  .nav__icon {
+    font-size: 1.5rem;
+  }
+
+  #pic{
+    margin-top: 500px;
+
+  }
+
+</style>
+<body>
+    <div class="main">
+        <div class="up">
+            <button>Upcoming</button>
+
+        </div>
+        <div id="comp">
+            <button>Completed</button>
+        </div>
+
+        
+
+    </div>
+    <div class="pick">
+    <h1>Nothing here!</h1>
+
+    </div>
+    <!------------------------------------menu bar---------------------------------------------->
+
+
+
+    <div id="pic">
+        <img src="images/pickup.png">
+    </div>
+
+<header class="header" id="header">
+    <nav class="nav container">
+      
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link active-link">
+                        <i class='bx bx-home-alt nav__icon'></i>
+                        <span class="nav__name">Home</span>
+                    </a>
+                </li>
+                
+                <li class="nav__item">
+                    <a href="rates.html" class="nav__link">
+                        
+                        <i class='bx bx-message-square-detail nav__icon'></i>
+                        <span class="nav__name">Rates</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="Schedule.html" class="nav__link">
+                      
+                        <i class='bx bxs-truck'
+                        style="font-size: 25px"></i>
+                        <span class="nav__name">Schedule</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class='bx bxs-truck' style="font-size: 25px;"></i>
+                        <span class="nav__name">Pickups</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contactme" class="nav__link">
+                      <i class='bx bx-user nav__icon'></i>   
+                        <span class="nav__name">Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+
+        <img src="assets/img/perfil.png" alt="" class="nav__img">
+    </nav>
+</header>
+</body>
+</html>

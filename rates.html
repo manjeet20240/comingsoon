@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Document</title>
+</head>
+
+
+
+<style>
+/*------------manu style -----------*/
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  .nav__img {
+    width: 32px;
+    border-radius: 50%;
+  }
+  
+  .nav__logo {
+    color: var(--title-color);
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .nav__menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: var(--container-color);
+      box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+      width: 100%;
+      height: 4rem;
+      padding: 0 1rem;
+      display: grid;
+      align-content: center;
+      border-radius: 1.25rem 1.25rem 0 0;
+      transition: .4s;
+      background: white;
+    }
+  }
+  
+  .nav__list, 
+  .nav__link {
+    display: flex;
+  }
+  
+  .nav__link {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+    color: var(--title-color);
+    font-weight: 600;
+    margin-right: 25px;
+
+  }
+  
+  .nav__list {
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .nav li a {
+    font-size: 15px;
+    text-decoration: none;}
+  
+    /* display: none;*/ /* Minimalist design, hidden labels */
+  
+  
+  .nav__icon {
+    font-size: 1.5rem;
+  }
+
+
+
+
+    .rates{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    #serch{
+        text-align: center;
+      
+    }
+    #serch button{
+        width: 80%;
+        height: 40px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px gray;
+        font-family: Impact,'Arial Narrow Bold', sans-serif;
+        font-size: 10px;
+    }
+
+    .box img{
+        width: 70px;
+        border-radius: 20px;
+    }
+    .box{
+        background: rgb(240, 240, 225);
+        border-radius: 20px;
+        padding: 1px;
+        box-shadow: 10px 10px 10px gray;
+        margin: 10px;
+    }
+
+    .items{
+        margin: 20px;
+    }
+
+</style>
+<body>
+    <div class="rate">
+        <div id="serch">
+            <button>
+                Search for an item
+            </button>
+        </div>
+        <h1 style="text-align: center;"><u>Check Rates</u></h1>
+    </div>
+
+<p>NORMAL RECYLABLES</p>
+<div class="items">
+    <div class="box">
+        <img src="images/aid12744374-v4-728px-Reduce-Paper-Waste-Step-5.jpg.jfif">
+        <h5 style="margin-left: 100px; margin-top: -50px;">OFFICE PAPER</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(A3/A4)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 12/KG</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/aid12744374-v4-728px-Reduce-Paper-Waste-Step-5.jpg.jfif">
+        <h5 style="margin-left: 100px; margin-top: -50px;">NEWSPAPER**RATES...</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(A3/A4)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 14/KG</SPAN></B></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/Books.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">COPIES/BOOKS</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(A3/A4)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 12/KG</B></span></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/box.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">CARDBOARD**TO GAT...</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(A3/A4)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 8/KG</B></SPan></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/bin.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">PET BOTTLES/OTHER PLASTIC</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(A3/A4)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 8/KG</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/beam.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">IRON**TO GET QUOTE</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(A3/A4)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 26/KG</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/hook.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">STEEL UTENSILS</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(A3/A4)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 40/KG</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/beer.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">ALUMINIUM</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(A3/A4)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 105/KG</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/brass-nuckle.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">BRASS</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(A3/A4)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 305/KG</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/wire.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">COPPER</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(A3/A4)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 425/KG</B></SPAN></h6>
+    </div>
+    <p>LARGE APPLIANCE</p>
+
+    <div class="box">
+        <img src="images/air-conditioner (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">SPLIT AC COPPER COIL</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(INDORE + OUTDOOR)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 4350/PIECE</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/air-conditioner(1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">WINDOWS AC 1.5 TON</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(COPPER COIL)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 4150/PIECE</B></SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/air-conditioner (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">SPLIT/WINDOWS AC 1 TON</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(COPPER COIL)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 3500/PIECE</B></SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/air-conditioner (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">SPLIT/WINDOWS AC 2 TON</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(COPPER COIL)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 5600/PIECE</B></SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/smart-washing-machine (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">FRONT LOAD FULLY AUTOMATIC WASHI...</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 1500/PIECE</B></SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/smart-washing-machine (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">TOP LOAD FULLY AUTOMATIC WASH...</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 1000/PIECE</B></SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/smart-washing-machine (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">SEMI AUTOMATIC WASHING</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 1000/PIECE</B></SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/water-heater (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">GEYSER</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 20/KG</B></SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/fridge (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">SINGLE DOOR FRIDGE</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 1100/PIECE</B></SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/fridge (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">DOUBLE DOOR FRIDGE</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 1350/PIECE</B></SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/ventilation (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">IRON COOLER</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 31/KG</B></SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/ventilation (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">PLASTIC COOLER</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 15/KG</B></SPAN></h6>
+    </div>
+
+<P>SMALL APPLIANCES</P>
+
+    <div class="box">
+            <img src="images/printer.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">PRINTER/SCANNER/FAX MACHINE</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 20/KG</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/lamp.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">PLASTIC E-WASTE</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 30/KG</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/television (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">CRT TV</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 200/PIECE</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/fan.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">CEILING FAN</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 40/KG</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/generator(1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">MOTORS</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(COPPER WIRING)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 35/KG</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/microwave.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">MICROWAVE</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 350/PIECE</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/generator.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">UPS</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 180/PIECE</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/engine.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">INVERTER/STABILIZER</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 42/KG</B></SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/battery.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">BATTERY</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;">(USED WITH INVERTER)</P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;"><B>RS 81/KG</B></SPAN></h6>
+    </div>
+
+    <P>MOBILES & COMPUTERS</P>
+    <div class="box">
+        <img src="images/black-laptop.png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">SCRAP LAPTOP</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;">RS 300/PIECE</SPAN></h6>
+    </div>
+
+    <div class="box">
+        <img src="images/computer(2) (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">CRT MONITOR</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;">RS 150/PIECE</SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/computer(2) (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">LCD MONITOR</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;">RS 20/KG</SPAN></h6>
+    </div>
+    <div class="box">
+        <img src="images/computer(2) (1).png">
+        <h5 style="margin-left: 100px; margin-top: -50px;">COMPUTER CPU</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;">RS 200/PIECE</SPAN></h6>
+    </div>
+
+<P>OTHERS</P>
+
+<div class="box">
+    <img src="images/BikeIcon.webp">
+
+        <h5 style="margin-left: 100px; margin-top: -50px;">BIKE</h5>
+        <P style=" margin-top: -20px; margin-left:100px ;"></P>
+        <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;">RS 2100/PIECE</SPAN></h6>
+</div>
+
+    <div class="box">
+    <img src="images/CarIcon.webp">
+    <h5 style="margin-left: 100px; margin-top: -50px;">CAR</h5>
+    <P style=" margin-top: -20px; margin-left:100px ;"></P>
+    <h6 style="margin-top: -10px; margin-left: 100px;"><SPAN style="color: GREEN;">RS 20000/PIECE</SPAN></h6>
+</div>
+
+<br/> <br/>
+<br/>
+</div>
+
+
+<!----------------------------Menubar----------------------------------------------->
+ 
+<header class="header" id="header">
+    <nav class="nav container">
+      
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link active-link">
+                        <i class='bx bx-home-alt nav__icon'></i>
+                        <span class="nav__name">Home</span>
+                    </a>
+                </li>
+                
+                <li class="nav__item">
+                    <a href="rates.html" class="nav__link">
+                        
+                        <i class='bx bx-message-square-detail nav__icon'></i>
+                        <span class="nav__name">Rates</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="Schedule.html" class="nav__link">
+                      
+                        <i class='bx bxs-truck'
+                        style="font-size: 25px"></i>
+                        <span class="nav__name">Schedule</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">
+                        <i class='bx bxs-truck' style="font-size: 25px;"></i>
+                        <span class="nav__name">Pickups</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contactme" class="nav__link">
+                      <i class='bx bx-user nav__icon'></i>   
+                        <span class="nav__name">Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+
+        <img src="assets/img/perfil.png" alt="" class="nav__img">
+    </nav>
+</header>
+
+</body>
+</html>
